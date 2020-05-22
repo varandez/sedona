@@ -23,13 +23,13 @@
   </header>
 
   <main>
-    <h1> Выбор отелей </h1>
+    <h1 class="visually-hidden"> Выбор отелей </h1>
 
     <section>
       <h2>Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
+        <div>
+          <h3>Инфраструктура:</h3>
           <ul>
             <li>
               <input type="checkbox" name="pool" id="filter-pool" checked>
@@ -44,10 +44,10 @@
               <label for="filter-wifi">wi-fi</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <fieldset>
-          <legend>Тип жилья:</legend>
+        <div>
+          <h3>Тип жилья:</h3>
           <ul>
             <li>
               <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -62,7 +62,7 @@
               <label for="filter-apartaments">Апартаменты</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
       </form>
 
       <div>
@@ -88,7 +88,7 @@
     </section>
 
     <section>
-      <h2>Список отелей</h2>
+      <h2 class="visually-hidden">Список отелей</h2>
       <div class="sort">
         <span>Найдено: 3</span>
         <h3>Сортировка</h3>
