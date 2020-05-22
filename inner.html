@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -25,48 +26,67 @@
     <h1> Выбор отелей </h1>
 
     <section>
-      <h2>Фильтр</h2>
-      <div>
-        <h3>Инфраструктура</h3>
-        <ul>
-          <li>
-            <span>Бассейн</span>
-          </li>
-          <li>
-            <span>Парковка</span>
-          </li>
-          <li>
-            <span>wi-fi</span>
-          </li>
-        </ul>
-      </div>
+      <h2>Фильтр товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wifi" id="filter-wifi">
+              <label for="filter-wifi">wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartaments" id="filter-apartaments" checked>
+              <label for="filter-apartaments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
 
       <div>
-        <h3>Тип жилья</h3>
-        <ul>
-          <li>
-            <span>Гостиница</span>
-          </li>
-          <li>
-            <span>Мотель</span>
-          </li>
-          <li>
-            <span>Апартаменты</span>
-          </li>
-        </ul>
-      </div>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div>
+            <label for="from">От</label>
+            <input type="text" name="from" id=from placeholder="0">
+          </div>
 
-      <div>
-        <h3>Стоимость в сутки</h3>
-        <span>От 0</span>
-        <span>До 3000</span>
-        <div>
-          Здесь будет рэйндж
-        </div>
+          <div>
+            <label for="to">До</label>
+            <input type="text" name="to" id="to" placeholder="3000">
+          </div>
+
+          <div>
+            <input type="range" min="0" max="3000" step="1">
+          </div>
+
+        </fieldset>
         <button type="submit">Показать</button>
       </div>
     </section>
-    
+
     <section>
       <h2>Список отелей</h2>
       <div class="sort">
@@ -201,6 +221,8 @@
       <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="31" height="40" alt="logo academy html"></a>
     </p>
   </footer>
+
+
 
 </body>
 </html>

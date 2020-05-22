@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -104,7 +105,7 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие гостиниц в седоне</p>
       <div class="map">
-      <img src="map.jpg" width="1199" height="594" alt="карта Седоны">
+        <img src="map.jpg" width="1199" height="594" alt="карта Седоны">
       </div>
     </section>
 
@@ -147,8 +148,56 @@
 
   <section>
     <h2>поиск гостиниц в седоне</h2>
+    <form action="https//echo.htmlacademy.ru" method="post">
+      <div>
+        <label for="appointment-date">Дата заезда:</label>
+        <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017">
+        <button type="date" aria-label="выбор даты выезда в календаре">
+          <object type="image/svg+xml" data="calendar.svg">
+            <img src="img/calendar.svg" alt="Календарь">
+          </object>
+        </button>
+        <!-- вставить svg тег -->
+      </div>
 
-    <!-- Здесь будет форма поиска -->
+      <div>
+        <label for="appointment-date">Дата выезда:</label>
+        <input id="appointment-date" type="text" name="date" placeholder="4 июля 2017">
+        <button type="button" aria-label="выбор даты выезда в календаре">
+          <object type="image/svg+xml" data="calendar.svg">
+            <img src="img/calendar.svg" alt="Календарь">
+          </object>
+        </button>
+        <!-- вставить svg тег -->
+      </div>
+
+      <div>
+        <label for="adult">Взрослые:</label>
+        <div>
+          <button type="button" aria-label="Уменьшить количество взрослых">-
+            <!-- здесь вставляем svg code?> -->
+          </button>
+          <input type="text" name="adult" placeholder="2">
+          <button type="button" aria-label="Увеличить количество взрослых">+
+            <!-- здесь вставляем svg code? -->
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <label for="children">Дети:</label>
+        <div>
+          <button type="button" aria-label="Уменьшить количество детей">-
+            <!-- здесь вставляем svg code?> -->
+          </button>
+          <input type="text" name="children" placeholder="0">
+          <button type="button" aria-label="Увеличить количество детей">+
+            <!-- здесь вставляем svg code? -->
+          </button>
+        </div>
+      </div>
+      <button type="submit">Найти</button>
+    </form>
   </section>
 
 
