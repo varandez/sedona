@@ -24,15 +24,15 @@
 
   <main>
 
-    <h1> Сайт городка Седона </h1>
+    <h1 class="visually-hidden"> Сайт городка Седона </h1>
     <section class="intro">
-      <h2>Приветствие</h2>
+      <h2 class="visually-hidden">Приветствие</h2>
       <img src="img/intro-welcome.svg" width="456" height="350" alt="Приветствие Седоны!">
 
     </section>
 
     <section>
-      <h2>Добро пожаловать в Седону!</h2>
+      <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
       <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
@@ -116,7 +116,7 @@
 
     <div>
       <p>#VISITSEDONA</p>
-      <a href="tel:">ТЕЛ: +7(495) 666-01-66</a>
+      <a href="tel:+74956660166" aria-label="Телефон компании">ТЕЛ: +7(495) 666-01-66</a>
     </div>
 
     <ul>
@@ -141,45 +141,37 @@
 
     <p>
       Website by
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="31" height="40" alt="logo academy html"></a>
+      <a href="https://htmlacademy.ru" aria-label="Переход на сайт компании HTML Academy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Logo HTML Academy"></a>
     </p>
   </footer>
 
 
   <section>
-    <h2>поиск гостиниц в седоне</h2>
-    <form action="https//echo.htmlacademy.ru" method="post">
+    <h2>Поиск гостиниц в седоне</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+
+
       <div>
-        <label for="appointment-date">Дата заезда:</label>
-        <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017">
-        <button type="date" aria-label="выбор даты выезда в календаре">
-          <object type="image/svg+xml" data="calendar.svg">
-            <img src="img/calendar.svg" alt="Календарь">
-          </object>
+        <label for="appointment-date-of-arrival">Дата выезда:</label>
+        <input id="appointment-date-of-arrival" type="text" name="date of arrival" placeholder="24 апреля 2017">
+        <button type="button" aria-label="выбор даты выезда в календаре">
         </button>
-        <!-- вставить svg тег -->
       </div>
 
       <div>
-        <label for="appointment-date">Дата выезда:</label>
-        <input id="appointment-date" type="text" name="date" placeholder="4 июля 2017">
+        <label for="appointment-date-of-departure">Дата выезда:</label>
+        <input id="appointment-date-of-departure" type="text" name="date of departure" placeholder="4 июля 2017">
         <button type="button" aria-label="выбор даты выезда в календаре">
-          <object type="image/svg+xml" data="calendar.svg">
-            <img src="img/calendar.svg" alt="Календарь">
-          </object>
         </button>
-        <!-- вставить svg тег -->
       </div>
 
       <div>
         <label for="adult">Взрослые:</label>
         <div>
           <button type="button" aria-label="Уменьшить количество взрослых">-
-            <!-- здесь вставляем svg code?> -->
           </button>
-          <input type="text" name="adult" placeholder="2">
+          <input id="adult" type="text" name="adult" placeholder="2">
           <button type="button" aria-label="Увеличить количество взрослых">+
-            <!-- здесь вставляем svg code? -->
           </button>
         </div>
       </div>
@@ -188,11 +180,9 @@
         <label for="children">Дети:</label>
         <div>
           <button type="button" aria-label="Уменьшить количество детей">-
-            <!-- здесь вставляем svg code?> -->
           </button>
-          <input type="text" name="children" placeholder="0">
+          <input id="children" type="text" name="children" placeholder="0">
           <button type="button" aria-label="Увеличить количество детей">+
-            <!-- здесь вставляем svg code? -->
           </button>
         </div>
       </div>
