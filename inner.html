@@ -26,7 +26,7 @@
     <h1 class="visually-hidden"> Выбор отелей </h1>
 
     <section>
-      <h2>Фильтр товаров</h2>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <div>
           <h3>Инфраструктура:</h3>
@@ -63,29 +63,27 @@
             </li>
           </ul>
         </div>
-      </form>
 
-      <div>
-        <fieldset>
-          <legend>Стоимость в сутки (Р):</legend>
+        <div>
+          <h3>Стоимость в сутки (Р):</h3>
           <div>
-            <label for="from">От</label>
-            <input type="text" name="from" id=from placeholder="0">
-          </div>
+            <label>
+              <span class="visually-hidden">Цена от</span>
+            <input type="text" name="cost from" placeholder="От 0">
+          </label>
 
-          <div>
-            <label for="to">До</label>
-            <input type="text" name="to" id="to" placeholder="3000">
-          </div>
-
+            <label>
+              <span class="visually-hidden">Цена до</span>
+            <input type="text" name="cost up" placeholder="До 3000">
+          </label>
           <div>
             <input type="range" min="0" max="3000" step="1">
           </div>
-
-        </fieldset>
+        </div>
         <button type="submit">Показать</button>
       </div>
-    </section>
+  </form>
+</section>
 
     <section>
       <h2 class="visually-hidden">Список отелей</h2>
