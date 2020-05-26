@@ -3,58 +3,61 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <a href="index.html" aria-label="Переход на главную страницу">
-      <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="inner.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
+
+    <header class="page-header">
+      <a class="main-header-logo" href="index.html" aria-label="Переход на главную страницу">
+        <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
+      </a>
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
   <main>
 
-    <h1>Добро пожаловать на страницу заглушку!</h1>
 
   </main>
 
-  <footer>
+  <footer class="footer-social">
 
-    <div>
+    <div class="social-number">
       <p>#VISITSEDONA</p>
       <a href="tel:+74956660166" aria-label="Телефон компании">ТЕЛ: +7(495) 666-01-66</a>
     </div>
 
-    <ul>
+    <ul class="social">
       <li>
-        <a href="blank.html" aria-label="Мы в Твиттере!">
+        <a class="social-button" href="blank.html" aria-label="Мы в Твиттере!">
           <img src="img/twitter.svg" width="46" height="48" alt="twitter">
         </a>
       </li>
 
       <li>
-        <a href="blank.html" aria-label="Мы в Фейсбук!">
+        <a class="social-button" href="blank.html" aria-label="Мы в Фейсбук!">
           <img src="img/fb-icon.svg" width="46" height="48" alt="fb-icon">
         </a>
       </li>
 
       <li>
-        <a href="blank.html" aria-label="Мы в Ютуб!">
+        <a class="social-button" href="blank.html" aria-label="Мы в Ютуб!">
           <img src="img/youtube.svg" width="46" height="48" alt="youtube">
         </a>
       </li>
     </ul>
 
-    <p>
+    <p class="footer-copyright">
       Website by
       <a href="https://htmlacademy.ru" aria-label="Переход на сайт компании HTML Academy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Logo HTML Academy"></a>
     </p>

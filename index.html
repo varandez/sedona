@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <a>
+  <header class="page-header">
+    <a class="main-header-logo">
       <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
     </a>
-    <nav>
-      <ul>
+    <nav class="main-nav">
+      <ul class="site-nav">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
@@ -31,14 +33,14 @@
 
     </section>
 
-    <section>
+    <section class="advantages">
       <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-      <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-      <div>
-        <div>
-          <h2>Настоящий городок</h2>
+      <div class="feauture">
+        <div class="wrapper"> <!-- Нормальное название? -->
+          <h3>Настоящий городок</h3>
           <span>&#8211; №1 &#8211;</span>
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -47,18 +49,18 @@
 
 
 
-      <ul>
-        <li>
+      <ul class="feautures-list">
+        <li class="feauture-item">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
 
-        <li>
+        <li class="feauture-item">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
 
-        <li>
+        <li class="feauture-item">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
@@ -66,10 +68,10 @@
 
 
 
-      <div>
+      <div class="feauture">
         <img src="img/image_2.jpg" width="800" height="256" alt="">
-        <div>
-          <h2>Там есть мост дьявола</h2>
+        <div class="wrapper">
+          <h3>Там есть мост дьявола</h3>
           <span>&#8211; №2 &#8211;</span>
           <p>Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
         </div>
@@ -77,21 +79,21 @@
 
 
 
-      <ul>
-        <li>
-          <h2>Небольшая площадь</h2>
+      <ul class="feautures-list">
+        <li class="feauture-item">
+          <h3>Небольшая площадь</h3>
           <span>&#8211; №3 &#8211;</span>
-          <p>Все достопримеча тельности находятся очень близко</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </li>
 
-        <li>
-          <h2>Красивая дорога</h2>
+        <li class="feauture-item">
+          <h3>Красивая дорога</h3>
           <span>&#8211; №4 &#8211;</span>
           <p>Ехать в Седону из Лас-&nbsp;Вегаса совсем не&nbsp;скучно!</p>
         </li>
 
-        <li>
-          <h2>Мало туристов</h2>
+        <li class="feauture-item">
+          <h3>Мало туристов</h3>
           <span>&#8211; №5 &#8211;</span>
           <p>Большинство едет в Гранд Каньон и толпятся там</p>
         </li>
@@ -100,11 +102,11 @@
 
 
 
-    
-    <section>
+
+    <section class="search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">Поиск гостиниц в седоне</button>
+      <button type="button" class="button-search">Поиск гостиниц в седоне</button>
       <div class="map">
         <img src="img/map.jpg" width="1199" height="594" alt="карта Седоны">
       </div>
@@ -113,62 +115,62 @@
   </main>
 
 
-  <footer>
+  <footer class="footer-social">
 
-    <div>
+    <div class="social-number">
       <p>#VISITSEDONA</p>
       <a href="tel:+74956660166" aria-label="Телефон компании">ТЕЛ: +7(495) 666-01-66</a>
     </div>
 
-    <ul>
+    <ul class="social">
       <li>
-        <a href="blank.html" aria-label="Мы в Твиттере!">
+        <a class="social-button" href="blank.html" aria-label="Мы в Твиттере!">
           <img src="img/twitter.svg" width="46" height="48" alt="twitter">
         </a>
       </li>
 
       <li>
-        <a href="blank.html" aria-label="Мы в Фейсбук!">
+        <a class="social-button" href="blank.html" aria-label="Мы в Фейсбук!">
           <img src="img/fb-icon.svg" width="46" height="48" alt="fb-icon">
         </a>
       </li>
 
       <li>
-        <a href="blank.html" aria-label="Мы в Ютуб!">
+        <a class="social-button" href="blank.html" aria-label="Мы в Ютуб!">
           <img src="img/youtube.svg" width="46" height="48" alt="youtube">
         </a>
       </li>
     </ul>
 
-    <p>
+    <p class="footer-copyright">
       Website by
       <a href="https://htmlacademy.ru" aria-label="Переход на сайт компании HTML Academy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Logo HTML Academy"></a>
     </p>
   </footer>
 
 
-  <section>
+  <section class="modal">
     <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
 
 
-      <div>
+      <div class="modal-wrap">
         <label for="appointment-date-of-arrival">Дата выезда:</label>
         <input id="appointment-date-of-arrival" type="text" name="date of arrival" placeholder="24 апреля 2017">
         <button type="button" aria-label="выбор даты выезда в календаре">
         </button>
       </div>
 
-      <div>
+      <div class="modal-wrap">
         <label for="appointment-date-of-departure">Дата выезда:</label>
         <input id="appointment-date-of-departure" type="text" name="date of departure" placeholder="4 июля 2017">
         <button type="button" aria-label="выбор даты выезда в календаре">
         </button>
       </div>
 
-      <div>
+      <div class="modal-search">
         <label for="adult">Взрослые:</label>
-        <div>
+        <div class="modal-adult">
           <button type="button" aria-label="Уменьшить количество взрослых">-
           </button>
           <input id="adult" type="text" name="adult" placeholder="2">
@@ -177,9 +179,9 @@
         </div>
       </div>
 
-      <div>
+      <div class="modal-search">
         <label for="children">Дети:</label>
-        <div>
+        <div class="modal-children">
           <button type="button" aria-label="Уменьшить количество детей">-
           </button>
           <input id="children" type="text" name="children" placeholder="0">

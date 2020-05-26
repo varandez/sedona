@@ -1,7 +1,285 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark-gray: #666666; /* рейтинг */
+  --basic-dark-gray: #333333; /* text */
+  --basic-gray: #eeeeee; /* фон */
+  --basic-light-gray: #cacaca; /* Кнопка по возрастанию и убыванию */
+  --basic-extra-light-gray: #f2f2f2;
+  --basic-brown: #766357; /* Покой */
+  --basic-dark-brown: #604e43; /* Наведение */
+  --basic-extra-brown: #503e33; /* Нажатие */
+  --basic-blue: #81b3d2; /* Покой, фон */
+  --basic-dark-blue: #669ec0; /* Наведение */
+  --basic-extra-blue: #669ec0; /* Нажатие */
+  --basic-white: #ffffff;
+}
+/* Global */
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px; /* Точно 21? Везде разное значение */
+  font-weight: 400;
+  color: var(--basic-black); /* Точно ли базовое значение черный, а не серый? */
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  /* Надо ещё что-то добавлять? */
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* main style */
+.page-header {
+
+}
+
+.main-header-logo {
+  background-position: center;
+/* надо отцентровать*/
+}
+
+
+
+/* Main navigation */
+.main-nav {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black)
+  background-color: transparent;
+
+}
+
+.site-nav {
+  list-style: none;
+}
+.site-nav a, {
+color: var(--basic-black);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--basic-dark-blue);
+}
+.site-nav a:active {
+  color: var(--basic-black);
+  opacity: .3;
+}
+
+/* advantages */
+
+.title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages p {
+  text-align: center;
+  line-height: 26px; /* А это значение тут необходимо ? */
+}
+
+.container {
+
+}
+
+.feauture {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  line-height: 21px;
+  text-align: center;
+}
+.feauture h3 {
+  font-weight: 700;
+}
+
+.feauture-list {
+
+}
+
+.feauture-item {
+text-align: center;
+list-style: none;
+}
+
+.feauture-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.search {
+  text-align: center;
+  line-height: 24px;
+}
+
+.search h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.button-search {
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: var(--basic-dark-brown);
+}
+
+.button--search:active {
+  background-color: var(--basic-extra-brown);
+}
+
+/* FOOTER */
+
+.footer-social {
+background-color: var(--basic-white);
+opacity: .9;
+}
+
+.social {
+  text-align: center;
+  list-style: none;
+}
+
+.social-number {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: left;
+  text-decoration: none; /* Как убрать синий цвет с номера телефона */
+
+}
+
+.social-button {
+  background-color: var(--basic-blue);
+  border: none;
+  text-align: center;
+
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-dark-blue);
+
+}
+
+.social-button:active {
+  background-color: var(--basic-extra-blue);
+
+}
+
+.footer-copyright {
+  text-align: right;
+  vertical-align: center;
+  line-height: 26px;
+
+}
+
+/* inner items */
+
+.items {
+list-style: none;
+text-align: center;
+}
+
+.items-title {
+
+}
+
+.items-title h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.item-text {
+  color: var(--basic-dark-gray);
+
+}
+
+.item-button {
+
+
+
+}
+
+.button-more {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+
+}
+.button-more:hover,
+.button-more:focus {
+  background-color: var(--basic-dark-blue);
+
+}
+.button-more:active {
+  background-color: var(--basic-extra-blue);
+}
+
+.button-book {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+
+
+}
+.button-book:hover,
+.button-book:focus {
+  background-color: var(--basic-dark-brown);
+}
+.button-book:active {
+  background-color: var(--basic-extra-brown);
+}
+
+/* rating  */
+
+
+.rating-block {
+
+}
+.star-rating {
+
+}
+.star {
+  background: url(img/star.svg);
+  background-repeat: no-repeat;
+
+}
+.rating {
+  text-align: center;
+  color: var(--basic-extra-dark-gray);
+  background-color: var(--basic-extra-light-gray);
+
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.modal {
+display: none;
 }
