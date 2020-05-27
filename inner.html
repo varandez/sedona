@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -10,6 +11,8 @@
 
 <body>
 
+
+<div class="container">
   <header class="page-header">
     <a class="main-header-logo" href="index.html" aria-label="Переход на главную страницу">
       <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
@@ -27,63 +30,63 @@
   <main>
     <h1 class="visually-hidden"> Выбор отелей </h1>
 
-    <section>
+    <section class="search-filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <div>
-          <h3>Инфраструктура:</h3>
-          <ul>
-            <li>
-              <input type="checkbox" name="pool" value="pool" id="filter-pool" checked>
-              <label for="filter-pool">Бассейн</label>
+        <div class="filter">
+          <h3 class="filter__title">Инфраструктура:</h3>
+          <ul class="filter__list">
+            <li class="filter__list--link">
+              <input class="filter__list--input" type="checkbox" name="pool" value="pool" id="filter-pool" checked>
+              <label class="filter__list--text" for="filter-pool">Бассейн</label>
             </li>
-            <li>
-              <input type="checkbox" name="parking" value="parking" id="filter-parking">
-              <label for="filter-parking">Парковка</label>
+            <li class="filter__list--link">
+              <input class="filter__list--input" type="checkbox" name="parking" value="parking" id="filter-parking">
+              <label class="filter__list--text" for="filter-parking">Парковка</label>
             </li>
-            <li>
-              <input type="checkbox" name="wifi" value="wifi" id="filter-wifi">
-              <label for="filter-wifi">wi-fi</label>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Тип жилья:</h3>
-          <ul>
-            <li>
-              <input type="checkbox" name="hotel" value="hotel" id="filter-hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
-            </li>
-            <li>
-              <input type="checkbox" name="motel" value="motel" id="filter-motel" checked>
-              <label for="filter-motel">Мотель</label>
-            </li>
-            <li>
-              <input type="checkbox" name="apartaments" value="apartaments" id="filter-apartaments" checked>
-              <label for="filter-apartaments">Апартаменты</label>
+            <li class="filter__list--link">
+              <input class="filter__list--input" type="checkbox" name="wifi" value="wifi" id="filter-wifi">
+              <label class="filter__tist--text" for="filter-wifi">wi-fi</label>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h3>Стоимость в сутки (Р):</h3>
-          <div>
+        <div class="filter">
+          <h3 class="filter__title">Тип жилья:</h3>
+          <ul class="filter__list">
+            <li class="filter__list--link">
+              <input class="filter__list--input" type="checkbox" name="hotel" value="hotel" id="filter-hotel" checked>
+              <label class="filter__list--text" for="filter-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input class="filter__list--input" type="checkbox" name="motel" value="motel" id="filter-motel" checked>
+              <label class="filter__tist--text" for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input class="filter__list--input" type="checkbox" name="apartaments" value="apartaments" id="filter-apartaments" checked>
+              <label class="filter__list--text" for="filter-apartaments">Апартаменты</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter__price">
+          <h3 class="filter__title">Стоимость в сутки (Р):</h3>
+          <div class="filter__price--item">
             <label>
               <span class="visually-hidden">Цена от</span>
-              <input type="text" name="cost from" placeholder="От 0">
+              <input class="filter__list--text" type="text" name="cost from" placeholder="От 0">
             </label>
 
-            <label>
+            <label class="filter__list--text">
               <span class="visually-hidden">Цена до</span>
-              <input type="text" name="cost up" placeholder="До 3000">
+              <input class="filter__list--text" type="text" name="cost up" placeholder="До 3000">
             </label>
-            <div>
+            <div class="filter__price--range">
               <input type="range" min="0" max="3000" step="1">
               <input type="range" min="0" max="3000" step="1">
             </div>
           </div>
-          <button type="submit">Показать</button>
+          <button class="filter__buttom" type="submit">Показать</button>
         </div>
       </form>
     </section>
@@ -96,21 +99,22 @@
         <span class="sorting-result">Найдено: 3</span>
         <h3 class="sorting-title">Сортировка</h3>
 
-        <ul>
+        <ul class="sorting-list">
           <li><a class="sorting-active" href="inner.html">По цене</a></li>
           <li><a class="sorting-disabled" href="inner.html">По типу</a></li>
           <li><a class="sorting-disabled" href="inner.html">По рейтингу</a></li>
         </ul>
 
-        <ul>
-          <li><a class="ascending" href="inner.html">По возрастанию</a></li>
-          <li><a class="descending" href="inner.html">По убыванию</a></li>
+        <ul class="sorting-list-up-down">
+          <li><a class="ascending" href="inner.html"></a></li>
+          <li><a class="descending" href="inner.html"></a></li>
         </ul>
       </div>
 
       <ul class="items">
         <li>
-          <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
+          <img src="img/item-amara.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
+          <div class="item-info">
           <div class="item-title">
             <h3>Amara Resort &amp; SPA</h3>
             <div class="item-text">
@@ -118,10 +122,11 @@
               <span>от 4000 р.</span>
             </div>
           </div>
-          <div class="item-button">
+          <div>
             <button class="button-more" type="button">Подробнее</button>
             <button class="button-book" type="button">Забронировать</button>
           </div>
+        </div>
           <div class="rating-block">
             <ul class="star-rating">
               <li class="star"></li>
@@ -133,8 +138,9 @@
           </div>
         </li>
 
-        <li>
-          <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+        <li class="item-desert">
+          <img src="img/item-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+          <div class="item-info">
           <div class="item-title">
             <h3>Desert Quail Inn</h3>
             <div class="item-text">
@@ -146,6 +152,7 @@
             <button class="button-more" type="button">Подробнее</button>
             <button class="button-book" type="button">Забронировать</button>
           </div>
+        </div>
           <div class="rating-block">
             <ul class="star-rating">
               <li class="star"></li>
@@ -157,7 +164,8 @@
         </li>
 
         <li>
-          <img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
+          <img src="img/item-villas.jpg" width="135" height="90" alt="Villas at poco diablo">
+          <div class="item-info">
           <div class="item-title">
             <h3>Villas at poco diablo</h3>
             <div class="item-text">
@@ -169,6 +177,7 @@
             <button class="button-more" type="button">Подробнее</button>
             <button class="button-book" type="button">Забронировать</button>
           </div>
+        </div>
           <div class="rating-block">
             <ul class="star-rating">
               <li class="star"></li>
@@ -191,20 +200,20 @@
 
     <ul class="social">
       <li>
-        <a class="social-button" href="blank.html" aria-label="Мы в Твиттере!">
-          <img src="img/link-twitter.svg" width="46" height="48" alt="twitter">
+        <a class="social-link" href="blank.html" aria-label="Мы в Твиттере!">
+          <img src="img/link-twitter.svg" width="17" height="17" alt="twitter">
         </a>
       </li>
 
       <li>
-        <a class="social-button" href="blank.html" aria-label="Мы в Фейсбук!">
-          <img src="img/link-fb.svg" width="46" height="48" alt="fb-icon">
+        <a class="social-link" href="blank.html" aria-label="Мы в Фейсбук!">
+          <img src="img/link-fb.svg" width="12" height="22" alt="fb-icon">
         </a>
       </li>
 
       <li>
-        <a class="social-button" href="blank.html" aria-label="Мы в Ютуб!">
-          <img src="img/link-youtube.svg" width="46" height="48" alt="youtube">
+        <a class="social-link" href="blank.html" aria-label="Мы в Ютуб!">
+          <img src="img/link-youtube.svg" width="20" height="16" alt="youtube">
         </a>
       </li>
     </ul>
@@ -214,8 +223,10 @@
       <a href="https://htmlacademy.ru" aria-label="Переход на сайт компании HTML Academy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Logo HTML Academy"></a>
     </p>
   </footer>
+</div>
 
 
 
 </body>
+
 </html>
