@@ -1,4 +1,6 @@
+
 /* Variables */
+
 
 :root {
   --basic-black: #000000;
@@ -14,8 +16,17 @@
   --basic-dark-blue: #669ec0; /* Наведение */
   --basic-extra-blue: #669ec0; /* Нажатие */
   --basic-white: #ffffff;
+  --basic-special: #888888;
 }
+
+
+
+
+
 /* Global */
+
+
+
 
 body {
   min-width: 1220px;
@@ -27,9 +38,8 @@ body {
   font-weight: 400;
   color: var(--basic-black); /* Точно ли базовое значение черный, а не серый? */
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--basic-extra-light-gray);
   /* Надо ещё что-то добавлять? */
-
 }
 
 a {
@@ -40,32 +50,86 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* main style */
-.page-header {
 
+
+
+
+
+
+/* main style */
+
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+.page-header {
+position: relative;
 }
 
 .main-header-logo {
-  background-position: center;
-/* надо отцентровать*/
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
 }
 
 
 
 /* Main navigation */
+
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top:  77px;
+  padding-bottom: 80px;
+  background-image: url("img/background-photo.jpg");
+  background-color: var(--basic-gray);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url("img/intro-mask.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
 .main-nav {
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--basic-black)
   background-color: transparent;
 
 }
 
 .site-nav {
   list-style: none;
+  margin: 0;
+  padding: 15px 72px 15px 72px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
 }
-.site-nav a, {
-color: var(--basic-black);
+.site-nav a {
+  color: var(--basic-black);
+  font-weight: 700;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -76,40 +140,195 @@ color: var(--basic-black);
   opacity: .3;
 }
 
+
+
+
+/* FOOTER */
+
+
+
+
+
+
+.footer-social {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 120px;
+  background-color: var(--basic-white);
+  opacity: .9;
+}
+
+.social {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  margin-left: 156px;
+}
+
+.social li {
+  display: flex;
+  margin-right: 10px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}
+
+.social-number {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: left;
+  margin-left: 117px;
+  margin-top: 23px;
+  margin-bottom: 36px;
+}
+
+.social-number a {
+  color: var(--basic-blacl);
+}
+
+.social-link {
+  background-color: var(--basic-blue);
+  border: none;
+
+
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--basic-dark-blue);
+
+}
+
+.social-link:active {
+  background-color: var(--basic-extra-blue);
+
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  line-height: 26px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 241px;
+
+}
+
+
+
+
+
+
+
+
+
+
 /* advantages */
 
-.title {
+
+.advantages {
+  margin-top: 42px;
+}
+
+
+.advantages .title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  max-width: 470px;
+  margin: 0 auto;
+
 }
 .advantages p {
   text-align: center;
+  margin-top: 16px;
   line-height: 26px; /* А это значение тут необходимо ? */
 }
 
 .container {
-
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+background-color: var(--basic-white);
+box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .feauture {
   background-color: var(--basic-blue);
   color: var(--basic-white);
-  line-height: 21px;
   text-align: center;
+  display: flex;
+}
+  .feauture .wrapper {
+    width: 400px;
+    height: 256px;
+    padding: 47px 51px 54px 51px;
+
 }
 .feauture h3 {
   font-weight: 700;
+  font-size: 21px;
 }
 
-.feauture-list {
+.feautures-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-gray);
+  width: 100%;
+  height: 256px;
 
 }
 
 .feauture-item {
+  position: relative;
 text-align: center;
 list-style: none;
+padding: 30px 60px;
+
+
+
+}
+.feauture-item--house::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  background-image: url("img/icon-house.svg");
+  background-repeat: no-repeat;
+
+}
+
+
+.feauture-item--box::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 77px;
+  background-image: url("img/icon-box.svg");
+  background-repeat: no-repeat;
+
+}
+
+.feauture-item--burger::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  background-image: url("img/icon-burger.svg");
+  background-repeat: no-repeat;
+
+
+
 }
 
 .feauture-item h3 {
@@ -117,9 +336,19 @@ list-style: none;
   font-weight: 700;
 }
 
+.feauture-item p {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 .search {
+  width: 435px;
+  height: 155px;
   text-align: center;
+  align-items: center;
   line-height: 24px;
+  margin-left: 382px;
+  margin-bottom: 22px;
 }
 
 .search h2 {
@@ -128,8 +357,11 @@ list-style: none;
 }
 
 .button-search {
+  width: 568px;
+  height: 86px;
   text-align: center;
-  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 21px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
 
@@ -140,59 +372,31 @@ list-style: none;
   background-color: var(--basic-dark-brown);
 }
 
-.button--search:active {
+.button-search:active {
   background-color: var(--basic-extra-brown);
 }
 
-/* FOOTER */
-
-.footer-social {
-background-color: var(--basic-white);
-opacity: .9;
-}
-
-.social {
-  text-align: center;
-  list-style: none;
-}
-
-.social-number {
-  font-weight: 700;
-  font-size: 21px;
-  text-align: left;
-  text-decoration: none; /* Как убрать синий цвет с номера телефона */
+.map {
 
 }
 
-.social-button {
-  background-color: var(--basic-blue);
-  border: none;
-  text-align: center;
 
-}
-.social-button:hover,
-.social-button:focus {
-  background-color: var(--basic-dark-blue);
 
-}
 
-.social-button:active {
-  background-color: var(--basic-extra-blue);
 
-}
 
-.footer-copyright {
-  text-align: right;
-  vertical-align: center;
-  line-height: 26px;
 
-}
 
 /* inner items */
 
+
+
+
+
+
 .items {
-list-style: none;
-text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 .items-title {
@@ -252,7 +456,17 @@ text-align: center;
   background-color: var(--basic-extra-brown);
 }
 
+
+
+
+
+
 /* rating  */
+
+
+
+
+
 
 
 .rating-block {
@@ -273,6 +487,25 @@ text-align: center;
 
 }
 
+
+
+
+
+
+/* other */
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -280,6 +513,7 @@ text-align: center;
   height: 1px;
   margin: -1px;
 }
+
 .modal {
-display: none;
+  display: none;
 }
