@@ -651,6 +651,7 @@ img {
     margin-left: 8px;
   }
 
+}
   .footer-copyright img:hover,
   .footer-copyright img:focus {
     background-color: var(--basic-blue);
