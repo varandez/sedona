@@ -642,25 +642,41 @@ img {
   .footer-copyright {
     display: flex;
     align-items: center;
-    line-height: 26px;
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 
   .footer-copyright a {
     margin-left: 8px;
   }
 
+.copyright-link {
+
+
 }
-  .footer-copyright img:hover,
-  .footer-copyright img:focus {
-    background-color: var(--basic-blue);
-  }
+.copyright-link:hover img{
+  display: none;
+}
 
-  .footer-copyright img:active {
-    background-color: var(--basic-special-gray);
-  }
+.copyright-link:active img {
+  display: none;
+}
+.copyright-link::before {
+  content: "";
+  background-image: url("img/logo-htmlacademy-hover.svg");
+  width: 115px;
+  height: 40px;
 
+}
+
+.copyright-link:hover::before {
+  display: block;
+}
+.copyright-link:active::before {
+  display: block;
+  background-image: url("img/logo-htmlacademy-active.svg");
+  width: 115px;
+  height: 40px;
+
+}
 
   /*       other:     ; */
   /*       other:     ; */
