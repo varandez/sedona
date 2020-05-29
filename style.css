@@ -25,6 +25,7 @@
 /*       Global       */
 /*       Global       */
 /*       Global       */
+/*       Global       */
 
 
 body {
@@ -663,7 +664,7 @@ img {
   content: "";
   background-image: url("img/logo-htmlacademy-hover.svg");
   width: 115px;
-  height: 40px;
+  height: 41px;
 
 }
 
@@ -674,7 +675,7 @@ img {
   display: block;
   background-image: url("img/logo-htmlacademy-active.svg");
   width: 115px;
-  height: 40px;
+  height: 41px;
 
 }
 
