@@ -192,7 +192,6 @@ img {
   line-height: 26px;
 }
 
-
 .advantage-header {
   color: var(--basic-white);
   text-align: center;
@@ -228,6 +227,7 @@ img {
   text-align: center;
   padding: 146px 60px 30px 60px;
 }
+
 .advantage__item--list-gray {
   padding: 50px 60px 30px 60px;
 }
@@ -344,9 +344,11 @@ img {
 	width: 23px;
   background-image:url(img/checkbox-off.svg);
 }
+
 .form__list-item-input:checked +.form__list-item-text {
 	background-image:url(img/checkbox-on.svg);
 }
+
 .form__list-item-input:disabled +.form__list-item-text {
 	background-image:url(img/checkbox-off.svg);
 }
@@ -354,6 +356,7 @@ img {
 .form__list-item-input:checked:disabled +.form__list-item-text {
 	background-image:url(img/checkbox-on.svg);
 }
+
 .form__list-text {
   text-transform: uppercase;
   color: var(--basic-white);
@@ -385,7 +388,6 @@ img {
   text-transform: uppercase;
 }
 
-
 .price__button {
   color: var(--basic-white);
   text-transform: uppercase;
@@ -398,6 +400,7 @@ img {
   padding: 8px 35px 7px 36px;
   margin-top: 30px;
 }
+
 .price__button:hover {
   background-color: var(--basic-white);
   color: var(--basic-black);
@@ -496,8 +499,6 @@ img {
 .hotel__sort-pick-link {
   display: flex;
 }
-
-
 
 .hotel__sort-pick-link--down {
   transform: rotate(-180deg);
