@@ -56,13 +56,13 @@
             action="https://echo.htmlacademy.ru"
             method="get"
           >
-            <div class="filter__form form">
+            <div class="filter__form form1">
               <h3 class="form__title">Инфраструктура:</h3>
 
               <ul class="form__list">
                 <li class="form__list-item">
                   <input
-                    class="form__list-item-input visually-hidden"
+                    class="visually-hidden form__list-item-input"
                     type="checkbox"
                     name="pool"
                     value="pool"
@@ -76,7 +76,7 @@
 
                 <li class="form__list-item">
                   <input
-                    class="form__list-item-input visually-hidden"
+                    class="visually-hidden form__list-item-input"
                     type="checkbox"
                     name="parking"
                     value="parking"
@@ -89,7 +89,7 @@
 
                 <li class="form__list-item">
                   <input
-                    class="form__list-item-input visually-hidden"
+                    class="visually-hidden form__list-item-input"
                     type="checkbox"
                     name="wifi"
                     value="wifi"
@@ -102,13 +102,13 @@
               </ul>
             </div>
 
-            <div class="filter__form form">
+            <div class="filter__form form2">
               <h3 class="form__title">Тип жилья:</h3>
 
               <ul class="form__list">
                 <li class="form__list-item">
                   <input
-                    class="form__list-item-input visually-hidden"
+                    class="visually-hidden form__list-item-input"
                     type="checkbox"
                     name="hotel"
                     value="hotel"
@@ -122,7 +122,7 @@
 
                 <li class="form__list-item">
                   <input
-                    class="form__list-item-input visually-hidden"
+                    class="visually-hidden form__list-item-input"
                     type="checkbox"
                     name="motel"
                     value="motel"
@@ -135,7 +135,7 @@
 
                 <li class="form__list-item">
                   <input
-                    class="form__list-item-input visually-hidden"
+                    class="visually-hidden form__list-item-input"
                     type="checkbox"
                     name="apartaments"
                     value="apartaments"
@@ -171,15 +171,14 @@
                     placeholder="До 3000"
                   />
                 </label>
+              </div>
 
                 <div class="price__range">
                   <div class="price__range-scale">
                     <div class="price__range-scale-bar"></div>
                   </div>
-                </div>
-                <div class="price__range-btn"></div>
-                <div class="price__range-btn price__range-btn--two"></div>
-              </div>
+                <div class="price__range-toggle price__range-toggle--min"></div>
+                <div class="price__range-toggle price__range-toggle--max"></div>
 
               <button class="price__button" type="submit">Показать</button>
             </div>
