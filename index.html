@@ -31,7 +31,7 @@
       <h1 class="visually-hidden"> Сайт городка Седона </h1>
       <section class="header-intro">
         <h2 class="visually-hidden">Приветствие</h2>
-        <img src="img/intro-welcome.svg" width="456" height="350" alt="Приветствие Седоны!">
+        <img src="img/intro-welcome.svg" width="458" height="350" alt="Приветствие Седоны!">
 
       </section>
 
@@ -46,24 +46,24 @@
             <span class="advantage-header__number">&mdash; №1 &mdash;</span>
             <p class="advantage-header__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/advantage-sedona.jpg" width="800" height="256" alt="Городок Седона">
+          <img class="advantage-header__image" src="img/advantage-sedona.jpg" width="800" height="256" alt="Городок Седона">
         </div>
 
 
 
         <ul class="advantage__list">
           <li class="advantage__item advantage__item--house">
-            <h3 class="advantage__title">Жильё</h3>
-            <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="advantage__title advantage__title--main">Жильё</h3>
+            <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
 
           <li class="advantage__item advantage__item--burger">
-            <h3 class="advantage__title">Еда</h3>
+            <h3 class="advantage__title advantage__title--main">Еда</h3>
             <p class="advantage__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
           <li class="advantage__item advantage__item--box">
-            <h3 class="advantage__title">Сувениры</h3>
+            <h3 class="advantage__title advantage__title--main">Сувениры</h3>
             <p class="advantage__text">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
@@ -71,9 +71,9 @@
 
 
         <div class="advantage-header">
-          <img src="img/advantage-diavel.jpg" width="800" height="256" alt="">
+          <img class="advantage-header__image" src="img/advantage-diavel.jpg" width="800" height="256" alt="">
           <div class="advantage-header__box">
-            <h3 class="advantage-header__title">Там есть <br> мост дьявола</h3>
+            <h3 class="advantage-header__title">Там есть мост&nbsp;дьявола</h3>
             <span class="advantage-header__number">&mdash; №2 &mdash;</span>
             <p class="advantage-header__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -83,21 +83,21 @@
 
         <ul class="advantage__list advantage__list--gray">
           <li class="advantage__item advantage__item--list-gray">
-            <h3 class="advantage__title">Небольшая <br> площадь</h3>
+            <h3 class="advantage__title">Небольшая площадь</h3>
             <span class="advantage__number">&mdash; №3 &mdash;</span>
             <p class="advantage__text">Все достопримечательности находятся очень близко</p>
           </li>
 
           <li class="advantage__item advantage__item--list-gray">
-            <h3 class="advantage__title">Красивая <br> дорога</h3>
+            <h3 class="advantage__title">Красивая дорога</h3>
             <span class="advantage__number">&mdash; №4 &mdash;</span>
-            <p class="advantage__text">Ехать в Седону из Лас-&nbsp;Вегаса совсем не&nbsp;скучно!</p>
+            <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
 
           <li class="advantage__item advantage__item--list-gray">
-            <h3 class="advantage__title">Мало <br> туристов</h3>
+            <h3 class="advantage__title">Мало туристов</h3>
             <span class="advantage__number">&mdash; №5 &mdash;</span>
-            <p class="advantage__text">Большинство едет в Гранд Каньон и толпятся там</p>
+            <p class="advantage__text">Большинство едет в Гранд Каньон и&nbsp;толпится там</p>
           </li>
         </ul>
       </section>
@@ -111,7 +111,7 @@
           седоне</p>
         <button class="search__button" type="button">Поиск гостиницы в седоне</button>
         <div class="search__map">
-          <img src="img/map.jpg" width="1199" height="594" alt="карта Седоны">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296139.75939481135!2d-111.87544684335516!3d34.908632724684146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1591904165768!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="Карта Седоны"></iframe>
         </div>
       </section>
 
@@ -186,25 +186,38 @@
 
 
         <div class="search-form__box">
-          <label for="appointment-date-of-arrival">Дата выезда:</label>
-          <input id="appointment-date-of-arrival" type="text" name="date of arrival" placeholder="24 апреля 2017">
-          <button type="button" aria-label="выбор даты выезда в календаре">
-          </button>
+          <label class="search-form__date" for="appointment-date-of-arrival">Дата заезда:</label>
+          <input 
+          id="appointment-date-of-arrival" 
+          type="text" 
+          name="date of arrival" 
+          placeholder="24 апреля 2017">
+          <button type="button" aria-label="выбор даты заезда в календаре">
+        </button>
         </div>
 
         <div class="search-form__box">
-          <label for="appointment-date-of-departure">Дата выезда:</label>
-          <input id="appointment-date-of-departure" type="text" name="date of departure" placeholder="4 июля 2017">
-          <button type="button" aria-label="выбор даты выезда в календаре">
+          <label class="search-form__date" for="appointment-date-of-departure">Дата выезда:</label>
+          <input 
+          id="appointment-date-of-departure" 
+          type="text" 
+          name="date of departure" 
+          placeholder="4 июля 2017">
+          <button type="button" aria-label="выбор даты выезда в календаре"> 
           </button>
         </div>
 
+        <div class="search-form__container">
         <div class="search-form__adult">
           <label for="adult">Взрослые:</label>
           <div class="search-form__adult-box">
             <button type="button" aria-label="Уменьшить количество взрослых">-
             </button>
-            <input id="adult" type="text" name="adult" placeholder="2">
+            <input 
+            id="adult" 
+            type="text" 
+            name="adult" 
+            placeholder="2">
             <button type="button" aria-label="Увеличить количество взрослых">+
             </button>
           </div>
@@ -215,15 +228,22 @@
           <div class="search-form__children-box">
             <button type="button" aria-label="Уменьшить количество детей">-
             </button>
-            <input id="children" type="text" name="children" placeholder="0">
+            <input 
+            id="children" 
+            type="text" 
+            name="children" 
+            placeholder="0">
             <button type="button" aria-label="Увеличить количество детей">+
             </button>
           </div>
+          </div>
         </div>
-        <button type="submit">Найти</button>
+        <button class="search-form__btn" type="submit">Найти</button>
       </form>
     </section>
   </div>
+
+  <script src="modal.js"></script>
 
 </body>
 
