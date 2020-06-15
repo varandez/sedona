@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link
+  href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -109,9 +112,85 @@
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
-        <button class="search__button" type="button">Поиск гостиницы в седоне</button>
+
+        <div class="search__form-container">
+          <button class="search__button" type="button">Поиск гостиницы в седоне</button>
+          <section class="search-form search-form--active">
+            <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+
+
+              <div class="search-form__box">
+                <label class="search-form__date" for="appointment-date-of-arrival">Дата заезда:</label>
+                <input
+                id="appointment-date-of-arrival"
+                type="text"
+                name="date of arrival"
+                placeholder="24 апреля 2017">
+                <button type="button" aria-label="выбор даты заезда в календаре">
+              </button>
+              </div>
+
+              <div class="search-form__box">
+                <label class="search-form__date" for="appointment-date-of-departure">Дата выезда:</label>
+                <input
+                id="appointment-date-of-departure"
+                type="text"
+                name="date of departure"
+                placeholder="4 июля 2017">
+                <button type="button" aria-label="выбор даты выезда в календаре">
+                </button>
+              </div>
+
+              <div class="search-form__container">
+              <div class="search-form__adult">
+                <label for="adult">Взрослые:</label>
+                <div class="search-form__adult-box">
+                  <button class="search-form__adult-box-btn"  type="button" aria-label="Уменьшить количество взрослых">
+                    <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="3"/>
+                      </svg>
+                  </button>
+                  <input
+                  id="adult"
+                  type="text"
+                  name="adult"
+                  placeholder="2">
+                  <button class="search-form__adult-box-btn" type="button" aria-label="Увеличить количество взрослых">
+                    <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+                      </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="search-form__children">
+                <label for="children">Дети:</label>
+                <div class="search-form__children-box">
+                  <button class="search-form__children-box-btn" type="button" aria-label="Уменьшить количество детей">
+                    <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="3"/>
+                      </svg>
+                  </button>
+                  <input
+                  id="children"
+                  type="text"
+                  name="children"
+                  placeholder="0">
+                  <button class="search-form__children-box-btn" type="button" aria-label="Увеличить количество детей">
+                    <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+                      </svg>
+                  </button>
+                </div>
+                </div>
+              </div>
+              <button class="search-form__btn" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
         <div class="search__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296139.75939481135!2d-111.87544684335516!3d34.908632724684146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1591904165768!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="Карта Седоны"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296139.75939481135!2d-111.87544684335516!3d34.908632724684146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1591904165768!5m2!1sru!2sru" width="1200" height="594" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
 
@@ -147,14 +226,15 @@
             class="social__item-link"
             href="blank.html"
             aria-label="Мы в Фейсбук!">
-            <img 
-            src="img/link-fb.svg" 
-            width="12" 
-            height="22" 
+            <img
+            src="img/link-fb.svg"
+            width="12"
+            height="22"
             alt="fb-icon" />
           </a>
         </li>
-       
+        
+
         <li class="social__item">
           <a
             class="social__item-link"
@@ -179,71 +259,9 @@
       </p>
     </footer>
 
-
-    <section class="search-form">
-      <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-
-
-        <div class="search-form__box">
-          <label class="search-form__date" for="appointment-date-of-arrival">Дата заезда:</label>
-          <input 
-          id="appointment-date-of-arrival" 
-          type="text" 
-          name="date of arrival" 
-          placeholder="24 апреля 2017">
-          <button type="button" aria-label="выбор даты заезда в календаре">
-        </button>
-        </div>
-
-        <div class="search-form__box">
-          <label class="search-form__date" for="appointment-date-of-departure">Дата выезда:</label>
-          <input 
-          id="appointment-date-of-departure" 
-          type="text" 
-          name="date of departure" 
-          placeholder="4 июля 2017">
-          <button type="button" aria-label="выбор даты выезда в календаре"> 
-          </button>
-        </div>
-
-        <div class="search-form__container">
-        <div class="search-form__adult">
-          <label for="adult">Взрослые:</label>
-          <div class="search-form__adult-box">
-            <button type="button" aria-label="Уменьшить количество взрослых">-
-            </button>
-            <input 
-            id="adult" 
-            type="text" 
-            name="adult" 
-            placeholder="2">
-            <button type="button" aria-label="Увеличить количество взрослых">+
-            </button>
-          </div>
-        </div>
-
-        <div class="search-form__children">
-          <label for="children">Дети:</label>
-          <div class="search-form__children-box">
-            <button type="button" aria-label="Уменьшить количество детей">-
-            </button>
-            <input 
-            id="children" 
-            type="text" 
-            name="children" 
-            placeholder="0">
-            <button type="button" aria-label="Увеличить количество детей">+
-            </button>
-          </div>
-          </div>
-        </div>
-        <button class="search-form__btn" type="submit">Найти</button>
-      </form>
-    </section>
   </div>
 
-  <script src="modal.js"></script>
+  <script src="js/modal.min.js"></script>
 
 </body>
 
