@@ -707,6 +707,10 @@ img {
   cursor: pointer;
 }
 
+.form__list-item-input:focus + label {
+  outline: auto;
+}
+
 .form__list-item-input + label::before {
   content: "";
   position: absolute;
@@ -786,6 +790,7 @@ margin-left: 10px;
   height: 100%;
   text-align: center;
   cursor: pointer;
+  color: var(--basic-white);
 }
 
 .price__text::-webkit-input-placeholder {
@@ -856,7 +861,7 @@ margin-left: 10px;
 
 }
 
-.price__range-toggle--min{
+.price__range-toggle--min { 
   left: 0px;
 }
 
